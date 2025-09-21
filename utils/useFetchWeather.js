@@ -22,7 +22,7 @@ export const useFetchWeather = () => {
 
       if (location.length === 0) return;
       const { data } = await axios.get(
-        `http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${location}&days=7`
+        `http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${location}&days=7/`
       );
       setWeatherData(data);
       console.log(data);
