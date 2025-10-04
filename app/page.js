@@ -77,7 +77,7 @@ export default function Home() {
             </div>
           </section>
           <section>
-            <h3 className="text-center text-4xl my-4">7-day forecast</h3>
+            <h3 className="text-center text-4xl my-4">3-day forecast</h3>
             <div className="flex flex-col items-center md:flex-row gap-4">
               {weatherData.forecast.forecastday.map((day, i) => (
                 <Link key={i} href={day.date}>
